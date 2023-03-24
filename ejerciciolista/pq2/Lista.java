@@ -25,7 +25,15 @@ public class Lista {
     /**
      * imprime toda la lista
      */
+
     public void imprimir(){
+        Nodo nodoAux=nodoPrincipal;
+        while(nodoAux!= null){
+            System.out.println(nodoAux.informacion);
+            nodoAux=nodoAux.siguienteNodo;
+        }
+
+        
         System.out.println(this.nodoPrincipal);
         System.out.println(this.nodoPrincipal.siguienteNodo);
         
